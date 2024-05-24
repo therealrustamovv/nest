@@ -1,0 +1,36 @@
+.links {
+  padding-bottom: 40px;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 930px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #253d4e;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 650px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #253d4e;
+    transition: all 500ms;
+    &:hover {
+      color: #3bb77e;
+    }
+  }
+}

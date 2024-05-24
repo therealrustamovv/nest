@@ -1,0 +1,120 @@
+.nav {
+  padding: 35px 0px;
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  &__select {
+    max-width: 155px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 50px;
+    color: #253d4e;
+    border-top: 2px solid #bce3c9;
+    border-left: 2px solid #bce3c9;
+    border-bottom: 2px solid #bce3c9;
+    border-right: none;
+  }
+  &__line {
+    width: 1px;
+    background-color: #cacaca;
+    height: 20px;
+    z-index: 1;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__input {
+    width: 300px;
+    padding: 17.3px 20px;
+    border-top: 2px solid #bce3c9;
+    border-left: none;
+    border-bottom: 2px solid #bce3c9;
+    border-right: 2px solid #bce3c9;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -1px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #838383;
+    }
+    @media (max-width: 500px) {
+      width: 100px;
+    }
+  }
+  &__search {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+  &__center {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 35px;
+      color: #3bb77e;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @media (max-width: 450px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    &__img {
+      max-width: 25px;
+    }
+    &__text {
+      color: #7e7e7e;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  &__count {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: -10px;
+    left: 15px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #3bb77e;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

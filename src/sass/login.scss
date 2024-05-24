@@ -1,0 +1,91 @@
+.login {
+  padding: 140px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 30px 30px;
+    border: 2px solid #e9e9e9;
+    border-radius: 5px;
+  }
+  &__page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  &__img {
+    max-width: 180px;
+  }
+  &__forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #444444;
+    margin-bottom: 10px;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    padding: 15px 13px;
+    margin-bottom: 30px;
+  }
+  &__password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    padding: 15px 13px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  &__pass {
+    width: 90%;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media (max-width: 350px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__text {
+    color: #777777;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    background-color: #3bb77e;
+    border-radius: 5px;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

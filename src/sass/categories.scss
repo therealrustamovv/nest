@@ -1,0 +1,40 @@
+.categories {
+  padding-bottom: 50px;
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    @media (max-width: 850px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #253d4e;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    @media (max-width: 850px) {
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #253d4e;
+    transition: all 500ms;
+    margin-right: 28px;
+    &:hover {
+      color: #3bb77e;
+    }
+    @media (max-width: 850px) {
+      line-height: 30px;
+    }
+  }
+}
